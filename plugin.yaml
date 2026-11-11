@@ -1,0 +1,11 @@
+name: hot-hermes
+version: "0.1.2"
+requires_hermes: ">=0.23.0"
+description: >-
+  Profile warmth monitoring, resource planning and explicit Desktop socket retention.
+  Observes selected-host memory and CPU without model calls. Desktop controls never
+  rewrite core settings; unsupported pool settings are shown as unavailable.
+provides_tools:
+  - hot_hermes_status
+license: MIT
+author: firetussin

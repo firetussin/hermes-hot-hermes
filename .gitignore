@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.test-vendor/
+.validation-home/
+preview/bundle.js

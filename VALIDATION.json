@@ -1,0 +1,121 @@
+{
+  "doctor": {
+    "findings": [],
+    "registered_tools": [
+      "hot_hermes_status"
+    ],
+    "registered_hooks": []
+  },
+  "validation": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "manifest",
+        "ok": true,
+        "detail": "plugin.yaml parses"
+      },
+      {
+        "name": "manifest fields",
+        "ok": true,
+        "detail": "name, version, description present"
+      },
+      {
+        "name": "requires_hermes",
+        "ok": true,
+        "detail": "spec '>=0.23.0' parses"
+      },
+      {
+        "name": "config schema",
+        "ok": true,
+        "detail": "not declared"
+      },
+      {
+        "name": "requires_env",
+        "ok": true,
+        "detail": "all entries UPPER_SNAKE"
+      },
+      {
+        "name": "oauth",
+        "ok": true,
+        "detail": "not declared"
+      },
+      {
+        "name": "loadable",
+        "ok": true,
+        "detail": "entry: __init__.py, desktop/plugin.js"
+      },
+      {
+        "name": "python dependencies",
+        "ok": true,
+        "detail": "none declared"
+      },
+      {
+        "name": "capability probe",
+        "ok": true,
+        "detail": "register() ran in isolation"
+      },
+      {
+        "name": "declared tools",
+        "ok": true,
+        "detail": "matches registrations"
+      },
+      {
+        "name": "declared hooks",
+        "ok": true,
+        "detail": "matches registrations"
+      },
+      {
+        "name": "declared middleware",
+        "ok": true,
+        "detail": "matches registrations"
+      },
+      {
+        "name": "built-in tool collisions",
+        "ok": true,
+        "detail": "no collisions"
+      },
+      {
+        "name": "security scan",
+        "ok": true,
+        "detail": "safe"
+      },
+      {
+        "name": "no core override",
+        "ok": true,
+        "detail": "no runtime rebinds of Hermes core"
+      },
+      {
+        "name": "desktop surface",
+        "ok": true,
+        "detail": "stays inside the plugin SDK surface"
+      }
+    ],
+    "warnings": [],
+    "isolation": {
+      "verdict": "host",
+      "host_ready": true,
+      "reasons": [],
+      "notes": [
+        "dashboard backend API is served through the plugin host (buffered responses)"
+      ],
+      "ctx_methods": [
+        "register_tool"
+      ]
+    }
+  },
+  "replacement_discovery": {
+    "ok": true,
+    "count": 1,
+    "version": "0.1.2"
+  },
+  "source_sha256": {
+    "plugin.yaml": "2cafacb00a356c55d9751ed5b0bdb2ee4980b5547b157e2a80a0da356e6874c5",
+    "__init__.py": "77c37e088df5f144e16465d183818fb4acbb0793238a6e8a9161a09cd8354cea",
+    "resources.py": "7ffb287ce87bcd714efee8da4b25cd9de5c7442e44f374b25fbfc9c9770dff11",
+    "src/logic.mjs": "cf5112181a26c2594e2c3cfaa38b1139b5ab25db75a26df97cdfa1a31d6cdaa6",
+    "src/page.mjs": "83acf1d8054d1fad1c544894de39d93746a139548282d7a6440643983804be45",
+    "desktop/plugin.js": "8cf234f1afc32bdc6a082cd3c421f7f22a0ca3f06887394b4470fb3b92142428",
+    "dashboard/plugin_api.py": "cd940053f220d687bccde991182560b3b4abf7a91baec6e5a7b21e9cfeef82f7",
+    "tools/install.py": "8a0c916c7c6459d73a2543daa2d57f946fd40743a58bed17883530437e4ffb9b"
+  }
+}

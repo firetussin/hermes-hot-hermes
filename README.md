@@ -1,5 +1,7 @@
 # Hot Hermes 0.1.2 — experimental test package
 
+![Hot Hermes](docs/hot-hermes.png)
+
 **Know what is already hot. Keep selected connections ready.**
 
 A compact flame-and-ember dashboard: monitor profile service status, compare five/eight/custom/all selections, and explicitly retain chosen Desktop connections. No model calls, dummy chat messages, core patches, telemetry or downloads.
